@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/assets/img/fav-icon2.png">
+    <title>Gustavo Ramos | Portfólio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* Animação de revelação tipo Squarespace */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body class="bg-white text-black leading-relaxed">
+
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
+        <div class="container mx-auto px-8 py-6 flex justify-between items-center">
+            <a href="#" class="text-lg font-bold tracking-tighter uppercase italic">GR.</a>
+            <div
+                class="**transition-all duration-300 ease-in-out space-x-12 text-xs font-medium uppercase tracking-[0.2em]">
+                <a href="#projects" class="hover:font-bold transition">Projetos</a>
+                <a href="/sobre.html" class="hover:font-bold transition">Sobre</a>
+                <a href="#contact" class="hover:font-bold transition-all">Contato</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Começo -->
+    <section class="min-h-screen flex flex-col justify-center px-8 lg:px-24">
+        <div class="reveal active">
+            <span class="text-violet-600 font-bold tracking-widest uppercase text-xs mb-4 block">Disponível para novos
+                projetos</span>
+            <h1 class="text-6xl md:text-8xl lg:text-9xl font-black tracking-tighter leading-none mb-8">
+                GUSTAVO <br> RAMOS.
+            </h1>
+            <p class="max-w-2xl text-xl md:text-2xl text-gray-500 font-light leading-relaxed">
+                Desenvolvedor Full-Stack focado em criar interfaces digitais <span
+                    class="text-black font-bold italic uppercase">criativas</span> e experiências <span
+                    class="text-black font-bold italic uppercase">memoráveis</span>.
+            </p>
+        </div>
+    </section>
+
+    <!-- SECTION DOS PROJETOS -->
+    <section id="projects" class="py-20 px-8 lg:px-24 bg-gray-50">
+        <div class="columns-1 md:columns-2 gap-12 space-y-12">
+
+            <!-- PROJETO 1 -->
+            <div class="break-inside-avoid reveal group flex flex-col mb-12">
+                <div class="overflow-hidden bg-gray-200 rounded-xl aspect-[16/10] mb-4">
+                    <img src="assets/img/projeto1.png" alt="Whinsdor"
+                        class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 group-hover:scale-105">
+                </div>
+
+                <div class="flex flex-wrap gap-2 mb-4 min-h-[24px]">
+                    <span
+                        class="bg-yellow-500 text-black text-[10px] font-bold px-2 py-0.5 rounded uppercase tracking-wider border border-blue-100">Smooth
+                        Transitions JS</span>
+                    <span
+                        class="bg-amber-500 text-white text-[10px] font-bold px-2 py-0.5 rounded uppercase tracking-wider border border-amber-100">Visual
+                        Identity System</span>
+                    <span
+                        class="bg-red-500 text-white text-[10px] font-bold px-2 py-0.5 rounded uppercase tracking-wider border border-slate-100">Advanced
+                        Semantic HTML</span>
+                </div>
+
+                <h3 class="text-2xl font-bold uppercase tracking-tight group-hover: transition-colors">
+                    Whinsdor Club</h3>
+                <p class="text-gray-400 uppercase text-xs tracking-widest mt-2">Web Design / Branding</p>
+
+                <button
+                    onclick="openModal('Whinsdor Club', 'Uma imersão digital na história de um gigante britânico fictício. Desenvolvido com foco em transições suaves e identidade marcante.', 'assets/img/projeto1.png', 'https://gustavorcaetano.github.io/whinsdor-club-site/')"
+                    class="text-blue-500 font-bold hover:underline text-sm uppercase tracking-wider mt-4 text-left">
+                    Ver mais →
+                </button>
+            </div>
+
+
+            <!-- PROJETO 3 -->
+            <div class="break-inside-avoid reveal group flex flex-col mb-12">
+                <div class="overflow-hidden bg-gray-200 rounded-xl aspect-square mb-4">
+                    <img src="assets/img/bannerprojeto3.png" alt="Contador"
+                        class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 group-hover:scale-105">
+                </div>
+
+                <div class="flex flex-wrap gap-2 mb-4 min-h-[24px]">
+                    <span
+                        class="bg-yellow-400 text-black text-[10px] font-bold px-2 py-0.5 rounded uppercase tracking-wider">JavaScript
+                        ES6+</span>
+                    <span
+                        class="bg-indigo-200 text-indigo-900 text-[10px] font-bold px-2 py-0.5 rounded uppercase tracking-wider">CSS
+                        Animations</span>
+                    <span
+                        class="bg-red-700 text-white text-[10px] font-bold px-2 py-0.5 rounded uppercase tracking-wider">DOM
+                        Manipulation</span>
+                </div>
+
+                <h3 class="text-2xl font-bold uppercase tracking-tight group-hover: transition-colors">
+                    Contador de Memórias</h3>
+                <p class="text-gray-400 uppercase text-xs tracking-widest mt-2">Interactive UI / JavaScript</p>
+
+                <button onclick="openModal(
+                        'Contador de Memórias', 
+                        'Um projeto de interface minimalista focado em experiência emocional. Utiliza JavaScript avançado para manipulação de datas (DOM Manipulation e Event Listeners) para calcular e exibir o tempo decorrido de momentos especiais em tempo real. Design focado em micro-interações e estética limpa.', 
+                        'assets/img/projeto3.png', 
+                        'https://gustavorcaetano.github.io/30SETEMBRO2025/'
+                    )" class="text-blue-500 font-bold hover:underline text-sm uppercase tracking-wider mt-4 text-left">
+                    Ver mais →
+                </button>
+            </div>
+
+            <!-- PROJETO 2 -->
+            <div class="break-inside-avoid reveal group flex flex-col mb-12">
+                <div class="overflow-hidden bg-gray-200 rounded-xl aspect-[4/5] mb-4">
+                    <img src="assets/img/projeto2.png" alt="Pizzaria"
+                        class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 group-hover:scale-105">
+                </div>
+                <div class="flex flex-wrap gap-2 mb-4 min-h-[24px]">
+                    <span
+                        class="bg-purple-700 text-purple-50 text-[10px] font-bold px-2 py-0.5 rounded uppercase tracking-wider">PHP
+                        Full-Stack</span>
+                    <span
+                        class="bg-blue-700 text-blue-50 text-[10px] font-bold px-2 py-0.5 rounded uppercase tracking-wider">MySQL
+                        Database</span>
+                    <span
+                        class="bg-orange-700 text-orange-50 text-[10px] font-bold px-2 py-0.5 rounded uppercase tracking-wider">Painel
+                        Administrativo</span>
+                </div>
+
+                <h3 class="text-2xl font-bold uppercase tracking-tight group-hover: transition-colors">
+                    Pizzaria Palmirinha</h3>
+                <p class="text-gray-400 uppercase text-xs tracking-widest mt-2">UI Design / Full-Stack Development</p>
+                <button
+                    onclick="openModal(
+                    'Pizzaria Palmirinha', 
+                    'Um sistema Full-Stack completo desenvolvido para uma pizzaria artesanal. O projeto conta com um cardápio interativo, sistema de pedidos e um painel administrativo robusto para gestão de produtos e vendas, integrando PHP com banco de dados MySQL para uma experiência dinâmica.','assets/img/projeto2.png','https://pizzariapalmirinha.free.nf')"
+                    class="text-blue-500 font-bold hover:underline text-sm uppercase tracking-wider mt-4 text-left">
+                    Ver mais →
+                </button>
+            </div>
+
+            <!-- PROJETO 4 -->
+            <div class="break-inside-avoid reveal group flex flex-col mb-12">
+                <div class="overflow-hidden bg-gray-200 rounded-xl aspect-[16/9] mb-4">
+                    <img src="assets/img/projeto4.png" alt="Barber Pro"
+                        class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 group-hover:scale-105">
+                </div>
+
+                <div class="flex flex-wrap gap-2 mb-4 min-h-[24px]">
+                    <span
+                        class="bg-blue-800 text-blue-100 text-[10px] font-bold px-2 py-0.5 rounded uppercase tracking-wider">React</span>
+                    <span
+                        class="bg-blue-800 text-white text-[10px] font-bold px-2 py-0.5 rounded uppercase tracking-wider">TypeScript</span>
+                    <span
+                        class="bg-emerald-100 text-emerald-800 text-[10px] font-bold px-2 py-0.5 rounded uppercase tracking-wider">Supabase</span>
+                </div>
+
+                <h3 class="text-2xl font-bold uppercase tracking-tight group-hover: transition-colors">
+                    Barber Pro</h3>
+                <p class="text-gray-400 uppercase text-xs tracking-widest mt-2">Full-Stack / React / Supabase</p>
+                <button onclick="openModal(
+                        'Barber Pro', 
+                        'Uma aplicação SaaS completa (Software as a Service) para gestão de barbearias de alto padrão. Desenvolvido com React e TypeScript, o sistema oferece agendamento em tempo real e uma interface premium focada na conversão. Utiliza Supabase como Backend-as-a-Service para autenticação e banco de dados, garantindo performance e escalabilidade.', 
+                        'assets/img/projeto4.png', 
+                        'https://barber-pro-five.vercel.app/'
+                    )" class="text-blue-500 font-bold hover:underline text-sm uppercase tracking-wider mt-4 text-left">
+                    Ver mais →
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Botão Ver Mais -->
+    <div id="btn-vermais"
+        class="flex justify-center items-center pb-20 bg-gray-100 font-bold uppercase tracking-widest">
+        <a href="/projetos.html"
+            class="inline-block mt-8 bg-violet-600 text-white px-8 py-3 rounded-md font-bold hover:bg-violet-700 transition-all transform hover:-translate-y-1 shadow-lg">
+            Ver mais Projetos
+        </a>
+    </div>
+
+
+    <!-- HTML do Modal -->
+    <div id="project-modal" tabindex="-1" aria-hidden="true"
+        class="fixed top-0 left-0 right-0 z-[60] hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-full max-h-full bg-black/50 backdrop-blur-sm flex justify-center items-center">
+        <div class="relative w-full max-w-2xl max-h-full">
+            <div class="relative bg-white rounded-2xl shadow-2xl border border-gray-100 overflow-hidden">
+                <div class="flex items-center justify-between p-6 border-b border-gray-100">
+                    <h3 id="modal-title" class="text-xl font-bold uppercase tracking-tighter text-black">
+                        Título do Projeto
+                    </h3>
+                    <button type="button" onclick="closeModal()"
+                        class="text-gray-400 bg-transparent hover:bg-gray-100 hover:text-black rounded-lg text-sm w-8 h-8 inline-flex justify-center items-center">
+                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 14 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="p-8 space-y-4">
+                    <img id="modal-image" src="" alt="" class="w-full rounded-xl aspect-video object-cover mb-4">
+                    <p id="modal-description" class="text-gray-600 leading-relaxed font-light">
+                        Descrição detalhada do projeto aqui...
+                    </p>
+                </div>
+                <div class="flex items-center p-6 space-x-4 border-t border-gray-100">
+                    <a id="modal-link" href="#" target="_blank"
+                        class="text-white bg-blue-600 hover:bg-blue-700 font-medium rounded-lg text-xs px-5 py-2.5 uppercase tracking-widest transition">Acessar
+                        Projeto</a>
+                    <button onclick="closeModal()" type="button"
+                        class="text-gray-500 bg-white hover:bg-gray-100 border border-gray-200 font-medium rounded-lg text-xs px-5 py-2.5 uppercase tracking-widest transition">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script>
+        
+        // Animação de revelação tipo Squarespace
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+
+        // FUNÇÕES DO MODAL 
+
+        function openModal(title, description, image, link) {
+            const modal = document.getElementById('project-modal');
+            document.getElementById('modal-title').innerText = title;
+            document.getElementById('modal-description').innerText = description;
+            document.getElementById('modal-image').src = image;
+            document.getElementById('modal-link').href = link;
+
+            modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden'; // Trava o scroll do site ao abrir
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('project-modal');
+            modal.classList.add('hidden');
+            document.body.style.overflow = 'auto'; // Destrava o scroll
+        }
+
+        // Fechar ao clicar fora do conteúdo branco
+        window.onclick = function (event) {
+            const modal = document.getElementById('project-modal');
+            if (event.target == modal) {
+                closeModal();
+            }
+        }
+    </script>
+</body>
+
+<footer id="contact" class="bg-gray-50 pt-20 pb-12 px-8 lg:px-24 border-t border-gray-200">
+    <div class="container mx-auto">
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-12">
+
+            <div class="max-w-md">
+                <h2 class="text-4xl font-black tracking-tighter uppercase mb-4">Vamos criar algo <br> <span
+                        class="text-violet-600">extraordinário?</span></h2>
+                <p class="text-gray-500 font-light italic">Disponível para projetos freelance e oportunidades full-time.
+                </p>
+            </div>
+
+            <div class="flex flex-col gap-6">
+                <div>
+                    <span class="text-[10px] font-bold uppercase tracking-[0.2em] text-gray-400 block mb-2">Contato
+                        Direto</span>
+                    <a href="mailto:seuemail@gmail.com"
+                        class="text-xl font-montserrat font-semibold hover:text-blue-600 transition-colors">gusramoscaetano@gmail.com</a>
+                </div>
+
+                <div class="flex gap-8">
+                    <div>
+                        <span
+                            class="text-[10px] font-bold uppercase tracking-[0.2em] text-gray-400 block mb-2">Social</span>
+                        <div class="flex gap-6 text-sm font-bold uppercase tracking-widest">
+                            <a href="https://linkedin.com/in/seu-perfil" target="_blank" rel="noopener noreferrer"
+                                class="hover:text-blue-600 transition-all">LinkedIn</a>
+                            <a href="https://github.com/gustavorcaetano" target="_blank" rel="noopener noreferrer"
+                                class="hover:text-blue-600 transition-all">GitHub</a>
+                            <a href="https://wa.me/5511998650532" target="_blank" rel="noopener noreferrer"
+                                class="hover:text-blue-600 transition-all">WhatsApp</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div
+            class="mt-24 pt-8 border-t border-gray-200 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] font-bold uppercase tracking-[0.3em] text-gray-400">
+            <p>© 2026 GUSTAVO RAMOS. TODOS OS DIREITOS RESERVADOS.</p>
+            <p>DESIGNED & BUILT BY Gustavo Ramos Caetano.</p>
+        </div>
+    </div>
+</footer>
+
+</html>

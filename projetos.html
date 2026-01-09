@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/assets/img/fav-icon2.png">
+    <title>Meus Projetos | Gustavo Ramos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body class="bg-white text-gray-800">
+    <!-- Navigation Bar -->
+    <nav class="pt-10 px-6 lg:px-24 max-w-7xl mx-auto">
+        <a href="index.html#btn-vermais"
+            class="group flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-gray-700 hover:text-black transition-all">
+            <span class="text-lg group-hover:-translate-x-1 transition-transform">←</span>
+            Voltar para o Início
+        </a>
+    </nav>
+    <!-- Section dos Projetos -->
+    <section class="py-20 px-6 lg:px-24">
+        <div class="max-w-7xl mx-auto">
+            <h1 class="text-4xl font-black mb-12 uppercase tracking-tighter">Todos os Projetos</h1>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+                <!-- Projeto 1 - Whinsdor Club -->
+                <div class="reveal group cursor-pointer flex flex-col"
+                    onclick="openModal('Whinsdor Club', 'O projeto foi desenvolvido em HTML, CSS e JavaScript, com foco em design limpo, identidade marcante e transições suaves entre as páginas. Desenvolvido para reunir a história, o elenco e as conquistas, o projeto mostra a trajetória de um time renascido das cinzas — um símbolo de união, juventude e comunidade.', 'HTML5, CSS3, JavaScript ES6+', '/assets/img/projeto1.png','https://gustavorcaetano.github.io/whinsdor-club-site/docs/home.html')">
+                    <div class="overflow-hidden rounded-xl aspect-video mb-4 bg-gray-100">
+                        <img src="/assets/img/bannerprojeto1.png" alt="Whinsdor Club"
+                            class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 group-hover:scale-110">
+                    </div>
+
+                    <div class="flex flex-wrap gap-2 mb-4 min-h-[24px]">
+                        <span
+                            class="bg-yellow-500 text-black text-[10px] font-bold px-2 py-0.5 rounded uppercase tracking-wider border border-blue-100">Smooth
+                            Transitions JS</span>
+                        <span
+                            class="bg-amber-500 text-white text-[10px] font-bold px-2 py-0.5 rounded uppercase tracking-wider border border-amber-100">Visual
+                            Identity System</span>
+                        <span
+                            class="bg-red-500 text-white text-[10px] font-bold px-2 py-0.5 rounded uppercase tracking-wider border border-slate-100">Advanced
+                            Semantic HTML</span>
+                    </div>
+
+                    <h3 class="text-xl font-bold uppercase group-hover:text-blue-600 transition-colors">Whinsdor Club
+                    </h3>
+                    <p class="text-gray-500 text-xs uppercase tracking-widest mt-1">Web Design / Branding</p>
+                    <button class="text-blue-500 font-bold text-xs uppercase mt-4 text-left hover:underline">Ver
+                        detalhes →</button>
+                </div>
+                <!-- Projeto 2 - Pizzaria Palmirinha -->
+                <div class="reveal group cursor-pointer flex flex-col"
+                    onclick="openModal('Pizzaria Palmirinha', 'A Pizzaria Palmirinha é um site completo com cardápio digital, ambiente agradável inspirado em comida caseira, e com sistema de login para administrador e vendedor.', 'HTML, CSS, PHP, MySQL', '/assets/img/projeto2.png')">
+                    <div class="overflow-hidden rounded-xl aspect-video mb-4 bg-gray-100">
+                        <img src="/assets/img/projeto2.png" alt="Pizzaria Palmirinha"
+                            class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 group-hover:scale-110">
+                    </div>
+                    <div class="flex flex-wrap gap-2 mb-4 min-h-[24px]">
+                        <span
+                            class="bg-purple-700 text-purple-50 text-[10px] font-bold px-2 py-0.5 rounded uppercase tracking-wider">PHP
+                            Full-Stack</span>
+                        <span
+                            class="bg-blue-700 text-blue-50 text-[10px] font-bold px-2 py-0.5 rounded uppercase tracking-wider">MySQL
+                            Database</span>
+                        <span
+                            class="bg-orange-700 text-orange-50 text-[10px] font-bold px-2 py-0.5 rounded uppercase tracking-wider">Painel
+                            Administrativo</span>
+                    </div>
+                    <h3 class="text-xl font-bold uppercase group-hover:text-blue-600 transition-colors">Pizzaria
+                        Palmirinha
+                    </h3>
+                    <p class="text-gray-500 text-xs uppercase tracking-widest mt-1">UI Design / Full-Stack Development
+                    </p>
+                    <button class="text-blue-500 font-bold text-xs uppercase mt-4 text-left hover:underline">Ver
+                        detalhes →</button>
+                </div>
+                <!-- Projeto 3 - Contador de Memórias -->
+                <div class="reveal group cursor-pointer flex flex-col"
+                    onclick="openModal('Contador de Memórias', 'Este projeto é uma experiência interativa cronológica. Ele nasceu do desejo de criar uma interface que não apenas mostrasse números, mas que convidasse o usuário a viajar pelo tempo através de uma interface fluida, lúdica e moderna. O site apresenta um contador progressivo dinâmico que, ao ser interagido, revela uma seletora de anos em estilo roleta (scroll wheel), permitindo navegar por marcos históricos ou pessoais com alta precisão visual.', 'HTML5, CSS3, JavaScript ES6+, DOM Manipulation', '/assets/img/bannerprojeto3.png','https://gustavorcaetano.github.io/30SETEMBRO2025/')">
+                    <div class="overflow-hidden rounded-xl aspect-video mb-4 bg-gray-100">
+                        <img src="/assets/img/bannerprojeto3.png" alt="Contador de Memórias"
+                            class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 group-hover:scale-110">
+                    </div>
+
+                    <div class="flex flex-wrap gap-2 mb-4 min-h-[24px]">
+                        <span
+                            class="bg-yellow-400 text-black text-[10px] font-bold px-2 py-0.5 rounded uppercase tracking-wider">JavaScript
+                            ES6+</span>
+                        <span
+                            class="bg-indigo-200 text-indigo-900 text-[10px] font-bold px-2 py-0.5 rounded uppercase tracking-wider">CSS
+                            Animations</span>
+                        <span
+                            class="bg-red-700 text-white text-[10px] font-bold px-2 py-0.5 rounded uppercase tracking-wider">DOM
+                            Manipulation</span>
+                    </div>
+
+                    <h3 class="text-xl font-bold uppercase group-hover:text-blue-600 transition-colors">Contador de
+                        Memórias</h3>
+                    <p class="text-gray-500 text-xs uppercase tracking-widest mt-1">Interactive UI / JavaScript</p>
+                    <button class="text-blue-500 font-bold text-xs uppercase mt-4 text-left hover:underline">Ver
+                        detalhes →</button>
+                </div>
+                <!-- Projeto 4 - Barber Pro -->
+                <div class="reveal group cursor-pointer flex flex-col"
+                    onclick="openModal('Barber Pro', 'O Barber Pro é um Sistema de Agendamento como Serviço (SAAS) moderno, focado em barbearias e salões de beleza. Ele resolve o problema clássico de agendamento manual, oferecendo uma experiência de usuário fluida e garantindo a integridade dos dados através de uma lógica robusta de controle de concorrência.', 'React, TypeScript, Supabase', '/assets/img/projeto4.png','https://barber-pro-five.vercel.app/')">
+                    <div class="overflow-hidden rounded-xl aspect-video mb-4 bg-gray-100">
+                        <img src="/assets/img/bannerprojeto4.png" alt="Barber Pro"
+                            class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 group-hover:scale-110">
+                    </div>
+
+                    <div class="flex flex-wrap gap-2 mb-4 min-h-[24px]">
+                        <span
+                            class="bg-blue-800 text-blue-100 text-[10px] font-bold px-2 py-0.5 rounded uppercase tracking-wider">React</span>
+                        <span
+                            class="bg-blue-800 text-white text-[10px] font-bold px-2 py-0.5 rounded uppercase tracking-wider">TypeScript</span>
+                        <span
+                            class="bg-emerald-100 text-emerald-800 text-[10px] font-bold px-2 py-0.5 rounded uppercase tracking-wider">Supabase</span>
+                    </div>
+
+                    <h3 class="text-xl font-bold uppercase group-hover:text-blue-600 transition-colors">Barber Pro</h3>
+                    <p class="text-gray-500 text-xs uppercase tracking-widest mt-1">Full-Stack / React / Supabase</p>
+                    <button class="text-blue-500 font-bold text-xs uppercase mt-4 text-left hover:underline">Ver
+                        detalhes →</button>
+                </div>
+                <!-- Projeto 5 - Apple Watch Store - Réplica -->
+                <div class="reveal group cursor-pointer flex flex-col"
+                    onclick="openModal('Apple Watch Store - Réplica', 'Este projeto é uma réplica de alta fidelidade da página de compra do Apple Watch. O foco principal foi recriar a experiência de usuário (UX) refinada da Apple, onde a interface reage instantaneamente às escolhas do cliente. Desenvolvido como uma peça de portfólio Front-End, ele demonstra habilidades em manipulação de DOM, estilização avançada de componentes e estruturação limpa de código sem o uso de frameworks pesados.', 'HTML5, CSS3, JavaScript ES6+, DOM Manipulation', '/assets/img/bannerprojeto5.png','https://gustavorcaetano.github.io/replica-apple-watch/')">
+                    <div class="overflow-hidden rounded-xl aspect-video mb-4 bg-gray-100">
+                        <img src="/assets/img/projeto5.png" alt="Apple Watch Store - Réplica"
+                            class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 group-hover:scale-110">
+                    </div>
+
+                    <div class="flex flex-wrap gap-2 mb-6 min-h-[24px]">
+                        <span
+                            class="bg-yellow-400 text-black text-[10px] font-bold px-2 py-1 rounded uppercase tracking-wider shadow-sm">
+                            JavaScript ES6+
+                        </span>
+                        <span
+                            class="bg-indigo-200 text-indigo-900 text-[10px] font-bold px-2 py-1 rounded uppercase tracking-wider shadow-sm">
+                            CSS Animations
+                        </span>
+                        <span
+                            class="bg-red-700 text-white text-[10px] font-bold px-2 py-1 rounded uppercase tracking-wider shadow-sm">
+                            DOM Manipulation
+                        </span>
+                    </div>
+
+                    <h3 class="text-xl font-bold uppercase group-hover:text-blue-600 transition-colors">Apple Watch
+                        Store - Réplica</h3>
+                    <p class="text-gray-500 text-xs uppercase tracking-widest mt-1">Interactive Experience / Powered by
+                        JavaScript</p>
+                    <button class="text-blue-500 font-bold text-xs uppercase mt-4 text-left hover:underline">Ver
+                        detalhes →</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div id="modal" class="fixed inset-0 bg-black/90 z-50 hidden flex items-center justify-center p-4 backdrop-blur-sm">
+        <div class="bg-white w-full max-w-4xl max-h-[90vh] overflow-y-auto rounded-2xl relative">
+            <button onclick="closeModal()"
+                class="absolute top-4 right-4 text-2xl font-bold text-gray-800 z-10">&times;</button>
+
+            <div class="grid grid-cols-1 md:grid-cols-2">
+                <img id="modal-img" src="" class="w-full h-full object-cover bg-gray-200">
+                <div class="p-8 lg:p-12 flex flex-col justify-center">
+                    <h2 id="modal-title" class="text-3xl font-black uppercase mb-4"></h2>
+                    <div id="modal-tech" class="flex flex-wrap gap-2 mb-6"></div>
+                    <p id="modal-desc" class="text-gray-600 leading-relaxed mb-8"></p>
+                    <a id="modal-link" href="#" target="_blank"
+                        class="inline-block bg-black text-white px-8 py-3 rounded-full font-bold uppercase text-sm hover:bg-blue-600 transition-all text-center">
+                        Visitar Projeto
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Lógica do Modal
+        function openModal(title, desc, tech, img, link) { // Adicionado 'link' aqui
+            document.getElementById('modal-title').innerText = title;
+            document.getElementById('modal-desc').innerText = desc;
+            document.getElementById('modal-img').src = img;
+            document.getElementById('modal-link').href = link; // Atualiza o destino do botão
+
+            const techContainer = document.getElementById('modal-tech');
+            techContainer.innerHTML = '';
+            tech.split(',').forEach(t => {
+                const span = document.createElement('span');
+                span.className = "bg-blue-100 text-blue-800 text-[10px] font-bold px-3 py-1 rounded-full uppercase";
+                span.innerText = t.trim();
+                techContainer.appendChild(span);
+            });
+
+            document.getElementById('modal').classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            document.getElementById('modal').classList.add('hidden');
+            document.body.style.overflow = 'auto'; // Destrava o scroll
+        }
+
+        // Animação Reveal
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('active');
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+        // Fechar ao clicar fora do conteúdo branco
+        window.onclick = function (event) {
+            const modal = document.getElementById('modal');
+            if (event.target == modal) {
+                closeModal();
+            }
+        }
+    </script>
+</body>
+
+</html>
