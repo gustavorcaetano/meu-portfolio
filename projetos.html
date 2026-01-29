@@ -122,7 +122,7 @@
                 </div>
                 <!-- Projeto 4 - Barber Pro -->
                 <div class="reveal group cursor-pointer flex flex-col"
-                    onclick="openModal('Barber Pro', 'O Barber Pro é um Sistema de Agendamento como Serviço (SAAS) moderno, focado em barbearias e salões de beleza. Ele resolve o problema clássico de agendamento manual, oferecendo uma experiência de usuário fluida e garantindo a integridade dos dados através de uma lógica robusta de controle de concorrência.', 'React, TypeScript, Supabase', 'assets/img/projeto4.png','https://barber-pro-five.vercel.app/')">
+                    onclick="openModal('Barber Pro', 'O Barber Pro é um Sistema de Agendamento como Serviço (SAAS) moderno, focado em barbearias e salões de beleza. Ele resolve o problema clássico de agendamento manual, oferecendo uma experiência de usuário fluida e garantindo a integridade dos dados através de uma lógica robusta de controle de concorrência.', 'React, TypeScript, Supabase, Vercel', 'assets/img/projeto4.png','https://barber-pro-five.vercel.app/')">
                     <div class="overflow-hidden rounded-xl aspect-video mb-4 bg-gray-100">
                         <img src="assets/img/bannerprojeto4.png" alt="Barber Pro"
                             class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 group-hover:scale-110">
@@ -130,11 +130,15 @@
 
                     <div class="flex flex-wrap gap-2 mb-4 min-h-[24px]">
                         <span
-                            class="bg-blue-800 text-blue-100 text-[10px] font-bold px-2 py-0.5 rounded uppercase tracking-wider">React</span>
+                            class="bg-[#61DAFB]/20 text-[#61DAFB] text-[10px] font-bold px-2 py-0.5 rounded border border-[#61DAFB]/30 uppercase tracking-wider">
+                            React
+                        </span>
                         <span
                             class="bg-blue-800 text-white text-[10px] font-bold px-2 py-0.5 rounded uppercase tracking-wider">TypeScript</span>
                         <span
                             class="bg-emerald-100 text-emerald-800 text-[10px] font-bold px-2 py-0.5 rounded uppercase tracking-wider">Supabase</span>
+                        <span
+                            class="bg-black text-white text-[10px] font-bold px-2 py-0.5 rounded uppercase tracking-wider">Vercel</span>
                     </div>
 
                     <h3 class="text-xl font-bold uppercase group-hover:text-blue-600 transition-colors">Barber Pro</h3>
@@ -172,6 +176,47 @@
                     <button class="text-blue-500 font-bold text-xs uppercase mt-4 text-left hover:underline">Ver
                         detalhes →</button>
                 </div>
+                <!-- Projeto 6 - TaskMaster - Lista de Tarefas -->
+                <div class="reveal group cursor-pointer flex flex-col"
+                    onclick="openModal('TaskMaster', 'O TaskMaster é uma aplicação de gerenciamento de tarefas (To-Do List) desenvolvida para oferecer uma experiência de usuário ultra-rápida e intuitiva. O foco principal foi criar uma interface Dark Mode elegante, utilizando o poder do Tailwind CSS para estilização e a segurança do TypeScript para manipulação do estado das tarefas. Criado para demonstrar domínio em manipulação de Arrays, persistência local e criação de interfaces modernas com componentes reutilizáveis em React.', 'REACT, TYPESCRIPT, TAILWIND CSS, VITE, Local Storage, Vercel', 'assets/img/projeto6.png','https://task-master-six-alpha.vercel.app/')">
+                    <div class="overflow-hidden rounded-xl aspect-video mb-4 bg-gray-100">
+                        <img src="assets/img/projeto6.png" alt="Lista de Tarefas TaskMaster"
+                            class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 group-hover:scale-110">
+                    </div>
+                    <div class="flex flex-wrap gap-2 mb-4 min-h-[24px]">
+                        <span
+                            class="bg-[#61DAFB]/20 text-[#61DAFB] text-[10px] font-bold px-2 py-0.5 rounded border border-[#61DAFB]/30 uppercase tracking-wider">
+                            React
+                        </span>
+
+                        <span
+                            class="bg-[#3178C6] text-white text-[10px] font-bold px-2 py-0.5 rounded uppercase tracking-wider">
+                            TypeScript
+                        </span>
+
+                        <span
+                            class="bg-[#06B6D4]/20 text-[#06B6D4] text-[10px] font-bold px-2 py-0.5 rounded border border-[#06B6D4]/30 uppercase tracking-wider">
+                            Tailwind CSS
+                        </span>
+
+                        <span
+                            class="bg-gradient-to-r from-[#646CFF] to-[#FFD62E] text-white text-[10px] font-bold px-2 py-0.5 rounded uppercase tracking-wider shadow-sm">
+                            Vite
+                        </span>
+                        <span
+                            class="bg-yellow-500 text-black text-[10px] font-bold px-2 py-0.5 rounded uppercase tracking-wider">Local
+                            Storage</span>
+                        <span
+                            class="bg-black text-white text-[10px] font-bold px-2 py-0.5 rounded uppercase tracking-wider">Vercel</span>
+                    </div>
+                    <h3 class="text-xl font-bold uppercase group-hover:text-blue-600 transition-colors">Pizzaria
+                        Palmirinha
+                    </h3>
+                    <p class="text-gray-500 text-xs uppercase tracking-widest mt-1">UI Design / Full-Stack Development
+                    </p>
+                    <button class="text-blue-500 font-bold text-xs uppercase mt-4 text-left hover:underline">Ver
+                        detalhes →</button>
+                </div>
 
             </div>
         </div>
@@ -183,7 +228,7 @@
                 class="absolute top-4 right-4 text-2xl font-bold text-gray-800 z-10">&times;</button>
 
             <div class="grid grid-cols-1 md:grid-cols-2">
-                <img id="modal-img" src="" class="w-full h-full object-cover bg-gray-200">
+                <img id="modal-img" src="" alt="Project image" class="w-full h-full object-cover bg-gray-200">
                 <div class="p-8 lg:p-12 flex flex-col justify-center">
                     <h2 id="modal-title" class="text-3xl font-black uppercase mb-4"></h2>
                     <div id="modal-tech" class="flex flex-wrap gap-2 mb-6"></div>
